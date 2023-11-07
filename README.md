@@ -30,6 +30,7 @@ Assign the class `js-video-lightbox` to the element with the link.
 
 Go to **Elementor > Custom Scripts** and add the following JavaScript code:
 
+```javascript
 <script>
 jQuery(document).ready(function($) {
     $('a.js-video-lightbox').on('click', function(e) {
@@ -40,6 +41,7 @@ jQuery(document).ready(function($) {
     });
 });
 </script>
+```
 
 Set display conditions to include only pages where this script is needed to optimize loading speeds.
 
@@ -47,8 +49,10 @@ Set display conditions to include only pages where this script is needed to opti
 
 Include the Magnific Popup library by adding the following code to your theme's functions.php file:
 
+```php
 function enqueue_magnific_popup() {
     wp_enqueue_style('magnific-popup-css', '//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css');
     wp_enqueue_script('magnific-popup-js', '//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js', array('jquery'));
 }
 add_action('wp_enqueue_scripts', 'enqueue_magnific_popup');
+```

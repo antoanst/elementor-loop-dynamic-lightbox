@@ -1,7 +1,7 @@
 # Elementor Loop Dynamic Lightbox
 A workaround for opening dynamic video links in a lightbox in Elementor Loops. Useful, because the lightbox functionality in Elementor doesn't include the option to add dynamic data, such as data from ACF custom fields.
 
-In addition, as of November 2023, Elementor's native elementorFrontend.utils.lightbox.showModal method is unavailable, requiring a 3rd party lightbox.
+As of November 2023, Elementor's native elementorFrontend.utils.lightbox.showModal method is unavailable, requiring a 3rd party lightbox.
 
 ## Prerequisites
 
